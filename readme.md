@@ -1,6 +1,27 @@
 SALAMI Data Set version 2.0
 ===========================
 
+## Osheroff's salami-data fork
+
+This is my fork of the salami-data-public dataset.  I've gone through SALAMI
+and retrieved what music I could from spotify.  Since the original dataset is not (easily) accessible,
+this dataset is incomplete.  Changes I've made:
+
+- I don't care about anything but the uppercase ("main") annotations in SALAMI.
+- getting the SALAMI annotations to match an audio file that's not from the original source was a pain.
+  Silence at the beginning of the track was different, had to hunt down files, whole thing was terrible.
+- annotations where I changed things (mostly aligning silence, but an occasional editorial fixup) are stored in
+	`annotations/XXX/parsed/textfile3_uppercase.txt`.  I occasionally chose
+	annotation 2 over annotation 1 as a starting point in cases where I deemed the first annotator incompetent.
+- I have yet to vet the internet archive annotations.  I can only take so much pain.  At least the mp3s will match.
+- I've begun collecting an additional corpus.  These are files from my collection as well as additional albums ripped from spotify.
+
+
+If you'd like the matching audio to this dataset drop me an issue and I can
+show you the S3 bucket where I keep it.  Probably the ideal scenario is to
+distribute the archive as a torrent or something, but that's a long-term eventuality.
+
+I collated my SALAMI dataset using [Sidify Music Converter](https://www.sidify.com/download.html)
 
 Contents
 --------
@@ -84,34 +105,34 @@ Please consult the RWC website for more details. https://staff.aist.go.jp/m.goto
 
 
 
-	
-	       .+++++~ .                        
-	     .I$77$OII==+?=.                    
-	   .7$ZZZZ7Z?=~~+===+                   
-	  .I$ZZZ$Z?==~=~==~~=+                  
-	  .7$$ZZ77=+===~~~.~:=                  
-	  .+ZZ$ZZ?~=~~~:=~=~=?                  
-	 ...$$7$7~+=~~~~=:=~~:                  
-	 ....7$7$:=,~:~..::=~.                  
-	  ..,,~77++++~~~~=?=~                   
-	   ..:=+IIII:=::~=~.     ....  ..       
-	      .,~=+=:~+,:..  ..~??=~+++++?.     
-	          ...      .,,+?=++===++?+?+~.  
-	           ...?$7$?7?Z+?+===~?=++~=+=.  
-	       ..:$I+7$7??+~++7II=?+===+?+?~?=. 
-	      .,$I+II77I??+7??+~??I+?+~++?==~.  
-	      ,?III?77?$7???+?++?+++I$+++~:.    
-	      .?77??~?7$7+77?+?++?=:?I+~+.      
-	      .,77?I++=IZ~?77+?+??=?=???I.      
-	       .:I?I=~?=I?ZZ77I++=?I?II~ .      
-	          ~$+I77II7I?I~II+=+?,          
-	              =?~~..                    
-	                         
-	
-	
+
+	       .+++++~ .
+	     .I$77$OII==+?=.
+	   .7$ZZZZ7Z?=~~+===+
+	  .I$ZZZ$Z?==~=~==~~=+
+	  .7$$ZZ77=+===~~~.~:=
+	  .+ZZ$ZZ?~=~~~:=~=~=?
+	 ...$$7$7~+=~~~~=:=~~:
+	 ....7$7$:=,~:~..::=~.
+	  ..,,~77++++~~~~=?=~
+	   ..:=+IIII:=::~=~.     ....  ..
+	      .,~=+=:~+,:..  ..~??=~+++++?.
+	          ...      .,,+?=++===++?+?+~.
+	           ...?$7$?7?Z+?+===~?=++~=+=.
+	       ..:$I+7$7??+~++7II=?+===+?+?~?=.
+	      .,$I+II77I??+7??+~??I+?+~++?==~.
+	      ,?III?77?$7???+?++?+++I$+++~:.
+	      .?77??~?7$7+77?+?++?=:?I+~+.
+	      .,77?I++=IZ~?77+?+??=?=???I.
+	       .:I?I=~?=I?ZZ77I++=?I?II~ .
+	          ~$+I77II7I?I~II+=+?,
+	              =?~~..
+
+
+
 	,---.     |              o
 	`---.,---.|    ,---.,-.-..
 	    |,---||    ,---|| | ||
 	`---'`---^`---'`---^` ' '`
-	
+
 	Structural Analysis of Large Amounts of Music Information.
